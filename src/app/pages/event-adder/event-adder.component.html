@@ -1,0 +1,125 @@
+<div class="px_layout">
+  <form class="md:px-[5em] px-[2em] w-full m-auto @container pb-[4em]">
+    <h1 class="text-[1.5em] font-bold">Add Event</h1>
+    <div class="flex">
+      <input
+        textInput
+        class="w-full max-w-[25em] min-w-0"
+        placeholder="https://eventbrite/com/anyevent"
+      />
+      <button squareButton>Import</button>
+    </div>
+    <!-- ============================ LEFT PART ============================ -->
+    <div
+      class="flex @[55em]:flex-row flex-col pt-[2em] gap-x-[1em] gap-y-[2em] overflow-hidden"
+    >
+      <div class="w-full xs:min-w-[28em] flex flex-col gap-y-[1em]">
+        <div class="flex flex-col gap-[0.5em] max-w-[28em] w-full">
+          <input textInput class="w-full px-[1.5em]" placeholder="Event Name" />
+          <input
+            textInput
+            class="w-full px-[1.5em]"
+            placeholder="Location Name"
+          />
+          <input textInput class="w-full px-[1.5em]" placeholder="Address" />
+        </div>
+        <div
+          class="flex gap-x-[1.5em] gap-y-[0.5em] max-w-[28em] w-full justify-between 2xs:flex-row flex-col"
+        >
+          <input
+            textInput
+            class="w-full px-[1.5em] text-center"
+            placeholder="Price"
+          />
+          <input
+            textInput
+            class="w-full px-[1.5em] text-center"
+            placeholder="Date"
+          />
+          <input
+            textInput
+            class="w-full px-[1.5em] text-center"
+            placeholder="Time"
+          />
+        </div>
+        <div class="flex flex-row gap-[0.8em] flex-wrap w-full max-w-[28em]">
+          <app-inputed-tag label="tag 1" />
+          <app-inputed-tag label="tag 1" />
+          <app-inputed-tag label="tag 1" />
+        </div>
+        <div
+          class="mt-[2em] max-w-[28em] w-full flex flex-row justify-between gap-[1em]"
+        >
+          <!-- ///////////// IMAGE FILE INSERTER START ///////////// -->
+          <div
+            class="relative h-[8em] aspect-[4/3] shrink-0 border-[1px] border-black rounded-[2px] p-[0.4em]"
+          >
+            <button
+              class="absolute top-[0.5em] right-[0.5em] h-[1.5em] p-[0.3em] rounded-full aspect-square hover:bg-white"
+            >
+              <img src="/assets/cut_icon.png" class="w-full h-full" />
+            </button>
+            <button
+              class="w-full h-full bg-[#B8C5D0] flex items-center justify-center rounded-[2px]"
+            >
+              <img
+                src="/assets/nature_vector_image.png"
+                class="w-[80%] h-auto"
+              />
+            </button>
+            <input type="file" class="hidden" />
+          </div>
+          <!-- ///////////// IMAGE FILE INSERTER END ///////////// -->
+          <div class="w-full flex flex-col gap-[0.8em] justify-center">
+            <input textInput placeholder="Event Host" class="w-full" />
+            <input textInput placeholder="Event Host URL" class="w-full" />
+          </div>
+        </div>
+        <a href="#" class="underline hover:font-bold w-max">Preview</a>
+        <div class="flex gap-[1em]">
+          <button squareButton color="white">Save Draft</button>
+          <button squareButton>Publish</button>
+        </div>
+      </div>
+      <!-- ============================ RIGHT PART ============================ -->
+      <div
+        class="w-full min-w-0 min-h-[2em] flex flex-col justify-between @[55em]:gap-[1em] gap-[2em]"
+      >
+        <!-- ///////////// IMAGE FILE INSERTER START ///////////// -->
+        <div
+          class="relative w-full aspect-[4/2] shrink-0 border-[1px] border-black rounded-[2px] px-[1em] py-[0.4em]"
+        >
+          <button
+            class="absolute top-[0.5em] right-[1.2em] h-[1.5em] p-[0.3em] rounded-full aspect-square hover:bg-white"
+          >
+            <img src="/assets/cut_icon.png" class="w-full h-full" />
+          </button>
+          <button
+            class="w-full h-full bg-[#B8C5D0] flex items-center justify-center rounded-[2px]"
+          >
+            <img src="/assets/nature_vector_image.png" class="w-[80%] h-auto" />
+          </button>
+          <input type="file" class="hidden" />
+        </div>
+        <!-- ///////////// IMAGE FILE INSERTER END ///////////// -->
+        <textarea
+          textInput
+          placeholder="Description"
+          class="w-full h-[12em] resize-none"
+        ></textarea>
+        <div class="flex justify-end gap-[1em] text-white">
+          <button
+            class="bg-[#979797] px-[1.2em] py-[0.5em] rounded-[2em] hover:opacity-75"
+          >
+            <p class="text-[1.2em]">Share</p>
+          </button>
+          <button
+            class="bg-[#000000] px-[1.2em] py-[0.5em] rounded-[2em] hover:opacity-75"
+          >
+            <p class="text-[1.2em]">Invite</p>
+          </button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

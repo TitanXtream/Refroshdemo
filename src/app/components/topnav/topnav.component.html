@@ -1,0 +1,14 @@
+<div
+  class="md:px-[2.5em] xs:px-[1.5em] px-[0.8em] md:py-[2em] xs:py-[1em] py-[0.5em]"
+>
+  <p class="font-bold text-[0.8em]">Refrosh Admin Panel</p>
+  <nav class="divide-x-[1.5px] divide-gray-900 flex justify-end xs:pr-[8em]">
+    <a
+      (routerLink)="(route.path)"
+      *ngFor="let route of router"
+      class="hover:font-bold text-[0.8em] px-[1em] cursor-pointer"
+      routerLinkActive="active"
+      >{{ route.label }}</a
+    >
+  </nav>
+</div>

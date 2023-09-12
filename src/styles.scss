@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Inter", sans-serif;
+  }
+  .text_size {
+    @apply md:text-[16px] xs:text-[11px] text-[8px];
+  }
+  .px_layout {
+    @apply md:px-[2.5em] xs:px-[1.5em] px-[0.8em];
+  }
+}
